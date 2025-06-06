@@ -32,8 +32,26 @@ header, footer {
     color: rgb(228, 231, 222);
     padding: 1em;
     text-align: center;
+    font-size: 1.0em;
+    font-weight: bold;
+}
+/* Optional: Style main content area */
+header, .logo{
+    display: flex;
+    justify-content: left; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+    height: 50px; /* Set a fixed height for the header */
+    background-color: #efae80;
+    
+    font-size: 2em;
+    font-weight: bold;
+    padding-right: 1em /* Set a fixed height for the header */
 }
 article, aside{
     max max-height: 500px;
+    /* Limit the height of article and aside to 500px */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds 500px */
+    padding: 1.5em;
+    border: 1px solid #ccc;
 }
 
