@@ -37,7 +37,7 @@ header, footer {
 }
 /* Optional: Style main content area */
 header, .logo{
-    display: flex;
+    display:flex;
     justify-content: left; /* Center the logo horizontally */
     align-items: center; /* Center the logo vertically */
     height: 50px; /* Set a fixed height for the header */
