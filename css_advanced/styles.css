@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
   background: #151414;
   color: #f6f3f3;
@@ -20,12 +20,13 @@ h1, h2, h3 {
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 0 1em;
+  padding: 0 2em;
 }
 
 /* Header */
 .site-header {
-  display: flex;
+    background-color: transparent;
+  display: list-item;
   justify-content: space-between;
   align-items: center;
   padding: 1.5em 2em;
@@ -50,10 +51,19 @@ h1, h2, h3 {
 
 /* Hero Section */
 .hero {
-  background: url('hero-bg.jpg') center/cover no-repeat;
+  background: url('./smile school project/background.png') center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 10em 2em 6em;
+  position: relative;
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    margin: auto;
 }
 
 .hero h1 {
@@ -81,10 +91,14 @@ h1, h2, h3 {
 
 /* Pros Section */
 .pros {
-  background-color: #071629;
-  color: white;
-  text-align: center;
-  padding: 5em 2em;
+    position: relative;
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 5em 2em;
 }
 
 .pros h2 {
@@ -97,8 +111,12 @@ h1, h2, h3 {
 }
 
 .pros-list {
+    position: relative;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  direction: initial;
+  bottom: auto;
   gap: 3em;
   justify-content: center;
 }
@@ -156,10 +174,12 @@ h1, h2, h3 {
 
 /* Tutorials Section */
 .tutorials {
-  padding: 4em 2em;
+  padding: 40px 10px;
+  margin: auto;
   background-color: #f9f9f9;
   color: #000;
   text-align: center;
+  width: 80%;
 }
 
 .tutorials h2 {
@@ -167,18 +187,22 @@ h1, h2, h3 {
   margin-bottom: 2em;
 }
 
-.tutorial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2em;
+.tutorials .tutorial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 .tutorial {
   background: white;
+  color: #000;
   padding: 1em;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
   text-align: left;
+  position: relative;
+  width: 250px
 }
 
 .tutorial img {
@@ -213,15 +237,16 @@ h1, h2, h3 {
 
 .membership h2 {
   font-size: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 2em 0;
 }
 
 .benefits {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2em;
   justify-content: center;
-  margin-bottom: 2em;
+  align-items: center;
+  margin: 2em;
 }
 
 .benefit .icon {
@@ -255,6 +280,7 @@ h1, h2, h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2em;
+  margin-top: 2em;
 }
 
 .faq-item h3 {
@@ -268,6 +294,7 @@ h1, h2, h3 {
   color: white;
   padding: 3em 2em;
   text-align: center;
+  border: 16px solid #0c0c0c;
 }
 
 .footer-top {
