@@ -1,39 +1,31 @@
-/* 1-styles.css */
-
 .results {
   background: #fff;
   padding: 2rem 1rem;
+  text-align: center;
 }
 
 .results h2 {
-  text-align: center;
-  font-size: 2rem;
   margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
 .results-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.results-item {
-  text-align: center;
-}
-
-.results-item .icon {
-  font-size: 3rem;
+.result-item h3 {
+  font-size: 2rem;
   color: #ff5e5e;
-  margin-bottom: 1rem;
-  display: inline-block;
+  margin-bottom: 0.5rem;
 }
 
-.results-item h3 {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
-}
-
-.results-item p {
+.result-item p {
+  font-size: 1rem;
   color: #555;
-  font-size: 0.95rem;
 }
+
+
